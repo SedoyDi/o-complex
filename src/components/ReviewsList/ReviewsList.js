@@ -1,9 +1,9 @@
-import './ReviewsList.css'
-import ReviewCard from '../ReviewCard/ReviewCard'
-import { observer } from 'mobx-react-lite'
-import reviewsListStore from '../../stores/ReviewListStore'
+import './ReviewsList.css';
 import { useEffect } from 'react';
-import MyLoader from '../MyLoader/MyLoader'
+import { observer } from 'mobx-react-lite';
+import MyLoader from '../MyLoader/MyLoader';
+import ReviewCard from '../ReviewCard/ReviewCard';
+import reviewsListStore from '../../stores/ReviewListStore';
 
 
 const ReviewsList = observer(() => {

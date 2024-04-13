@@ -32,3 +32,8 @@
     max-width: 100%;
   }
 }
+@media (max-width: 355px) {
+  .card-list__container {
+    grid-template-columns: 1fr;
+  }
+}

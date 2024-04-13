@@ -1,4 +1,5 @@
 import './ShoppingCart.css';
+import InputMask from 'react-input-mask';
 
 function ShoppingCart() {
     return (
@@ -8,13 +9,9 @@ function ShoppingCart() {
                 <ul className="shopping-cart__list">
                 </ul>
                 <div className="shopping-cart__container">
-                    <input
-                        className="shopping-cart__input"
-                        type=""
-                        placeholder="+7(___) ___-__-__" />
+                    <InputMask className="shopping-cart__input" mask="+7 (999) 999 99-99" alwaysShowMask={true} />
                     <button className="shopping-cart__button">заказать</button>
                 </div>
-
             </form>
         </section>
     )
