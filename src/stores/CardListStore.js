@@ -21,6 +21,12 @@ class CardListStore {
         const card = this.cards.find((item) => item.id === id);
         card.count--;
     }
+    changeCount = (id, value) => {
+        const card = this.cards.find((item) => item.id === id);
+        if (card) {
+            card.count = value;
+        }
+    }
 
     setCards = (page, pageSize) => {
         this._setLoading(true);

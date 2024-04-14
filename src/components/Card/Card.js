@@ -3,7 +3,7 @@ import Button from './Button/Button';
 import { observer } from 'mobx-react-lite';
 
 
-const Card = observer(({ card, incrementCount, decrementCount }) => {
+const Card = observer(({ card, incrementCount, decrementCount, changeCount }) => {
     return (
         <li className="card">
             <img src={card.image_url} alt='img' className='card__img' />
@@ -12,7 +12,7 @@ const Card = observer(({ card, incrementCount, decrementCount }) => {
                 <p className='card__description'>{card.description}</p>
             </div>
             <span className='card__price'>Цена: {card.price}&#x20bd;</span>
-            <Button id={card.id} count={card.count} incrementCount={incrementCount} decrementCount={decrementCount} />
+            <Button id={card.id} count={card.count} incrementCount={incrementCount} decrementCount={decrementCount} changeCount={changeCount} />
         </li>
     );
 });

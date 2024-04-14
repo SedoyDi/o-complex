@@ -8,7 +8,7 @@ import cardListStore from '../../stores/CardListStore';
 
 const CardList = observer(() => {
 
-    const { isLoading, cards, setCards, incrementCount, decrementCount } = cardListStore;
+    const { isLoading, cards, setCards, incrementCount, decrementCount, changeCount } = cardListStore;
 
     useEffect(() => {
 
@@ -34,7 +34,7 @@ const CardList = observer(() => {
             <ul className="card-list__container">
                 {cards &&
                     cards.map((card, key) => (
-                        <Card key={key} card={card} incrementCount={incrementCount} decrementCount={decrementCount} />
+                        <Card key={key} card={card} incrementCount={incrementCount} decrementCount={decrementCount} changeCount={changeCount} />
                     ))}
             </ul>
             <div className="card-list__loading-container">
