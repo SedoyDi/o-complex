@@ -21,6 +21,23 @@
   display: flex;
   gap: 17px;
 }
+.shopping-cart__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.shopping-cart__list div {
+  display: flex;
+  gap: 20px;
+  font-family: Inter;
+  font-size: max(min(2vw, 24px), 12px);
+  font-weight: 400;
+  text-align: left;
+}
+.shopping-cart__list h3 {
+  width: 70%;
+  overflow: hidden;
+}
 .shopping-cart__input {
   display: inline-block;
   font-family: Inter;
